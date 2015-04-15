@@ -1,0 +1,5 @@
+<h1>Result: <%= @message %></h1><a href="/rps"><h2>Play Again</h2></a>
+<% if @ready %>
+<h3>Player: <%= image_tag "#{@player_weapon}.png" ,:class => "rps_img" %></h3>
+<h3>Computer: <%= image_tag "#{@computer_weapon}.png" ,:class => "rps_img" %></h3>
+<% end %>
